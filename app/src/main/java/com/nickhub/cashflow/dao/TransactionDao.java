@@ -27,5 +27,5 @@ public interface TransactionDao {
 
     @Query("Select * from `transaction` where transaction_time >= :startTime and transaction_time <= :endTime")
     public List<Transaction> getAllTransactionsWithIn(long startTime,long endTime);
-    
+
 }
