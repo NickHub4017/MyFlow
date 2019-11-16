@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Transaction {
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "tr_id")
     public int trId;
 
     @ColumnInfo(name = "from_account_id")
